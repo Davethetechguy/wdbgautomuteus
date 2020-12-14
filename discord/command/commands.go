@@ -304,28 +304,6 @@ var AllCommands = []Command{
 		IsOperator: true,
 	},
 	{
-		CommandType: Privacy,
-		Command:     "privacy",
-		Example:     "privacy showme",
-		ShortDesc: &i18n.Message{
-			ID:    "commands.AllCommands.Privacy.shortDesc",
-			Other: "View AutoMuteUs privacy information",
-		},
-		Description: &i18n.Message{
-			ID:    "commands.AllCommands.Privacy.desc",
-			Other: "AutoMuteUs privacy and data collection details.\nMore details [here](https://github.com/denverquane/automuteus/blob/master/PRIVACY.md)",
-		},
-		Arguments: &i18n.Message{
-			ID:    "commands.AllCommands.Privacy.args",
-			Other: "showme, optin, or optout",
-		},
-		Aliases:    []string{"private", "priv", "gpdr"},
-		IsSecret:   false,
-		Emoji:      "🔍",
-		IsAdmin:    false,
-		IsOperator: false,
-	},
-	{
 		CommandType: Settings,
 		Command:     "settings",
 		Example:     "settings commandPrefix !",
@@ -348,28 +326,6 @@ var AllCommands = []Command{
 		IsOperator: true,
 	},
 	{
-		CommandType: Premium,
-		Command:     "premium",
-		Example:     "premium",
-		ShortDesc: &i18n.Message{
-			ID:    "commands.AllCommands.Premium.shortDesc",
-			Other: "View Premium Bot Features",
-		},
-		Description: &i18n.Message{
-			ID:    "commands.AllCommands.Premium.desc",
-			Other: "View all the features and perks of Premium AutoMuteUs membership",
-		},
-		Arguments: &i18n.Message{
-			ID:    "commands.AllCommands.Premium.args",
-			Other: "None",
-		},
-		Aliases:    []string{"donate", "paypal", "prem", "$"},
-		IsSecret:   false,
-		Emoji:      "💎",
-		IsAdmin:    false,
-		IsOperator: false,
-	},
-	{
 		CommandType: Stats,
 		Command:     "stats",
 		Example:     "stats @Soup",
@@ -388,28 +344,6 @@ var AllCommands = []Command{
 		Aliases:    []string{"stat", "st"},
 		IsSecret:   false,
 		Emoji:      "📊",
-		IsAdmin:    false,
-		IsOperator: false,
-	},
-	{
-		CommandType: Info,
-		Command:     "info",
-		Example:     "info",
-		ShortDesc: &i18n.Message{
-			ID:    "commands.AllCommands.Info.shortDesc",
-			Other: "View Bot info",
-		},
-		Description: &i18n.Message{
-			ID:    "commands.AllCommands.Info.desc",
-			Other: "View info about the bot, like total guild number, active games, etc",
-		},
-		Arguments: &i18n.Message{
-			ID:    "commands.AllCommands.Info.args",
-			Other: "None",
-		},
-		Aliases:    []string{"info", "inf", "in", "i"},
-		IsSecret:   false,
-		Emoji:      "📰",
 		IsAdmin:    false,
 		IsOperator: false,
 	},
